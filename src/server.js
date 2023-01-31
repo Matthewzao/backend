@@ -16,7 +16,7 @@ const server = http.createServer((request, response) => {
     if (metodo === 'POST' && url === '/users') {
         users.push({
             id: 1,
-            name: 'Matthew Doe',
+            name: 'Matthew Gomes',
             email: 'matthew@exemple.com'
         })
     }
@@ -27,6 +27,5 @@ const server = http.createServer((request, response) => {
 
     return response.writeHead(404).end('NAO ENCONTRADO')  /* MENSAGEM DE ERRO QUANDO A ROTA NAO É ENCONTRADA*/
 })
-
 
 server.listen(3333)
